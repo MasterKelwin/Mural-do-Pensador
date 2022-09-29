@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.89 521.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #faca23;
+        font-family: DMSerifDisplay-Regular, 'DM Serif Display';
+        font-size: 461.79px;
+      }
+
+      .cls-2 {
+        fill: #300e00;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-2" d="M69.83,504.4c-29,0-52.59-23.59-52.59-52.59V131.77H0V451.81c0,38.51,31.33,69.83,69.83,69.83H374.68v-17.24H69.83Z"/>
+      <path class="cls-2" d="M421.05,46.56c29,0,52.59,23.59,52.59,52.59V419.19h17.24V99.15c0-38.51-31.33-69.83-69.83-69.83H116.21v17.24H421.05Z"/>
+    </g>
+    <path class="cls-2" d="M97.5,29.32v48.68l-14.81,35.07h-21.31l7.56-35.07h-14.06V29.32h42.63Zm-54.87,0v48.68l-14.81,35.07H6.65l7.41-35.07H0V29.32H42.63Z"/>
+    <path class="cls-2" d="M490.89,437.89v48.68l-14.81,35.07h-21.31l7.56-35.07h-14.06v-48.68h42.63Zm-54.87,0v48.68l-14.81,35.07h-21.16l7.41-35.07h-14.06v-48.68h42.63Z"/>
+  </g>
+  <text class="cls-1" transform="translate(78.44 383.28) scale(1.04 1)"><tspan x="0" y="0">Q</tspan></text>
+</svg>
