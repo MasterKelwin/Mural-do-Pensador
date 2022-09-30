@@ -19,7 +19,6 @@ export class CreateQuoteComponent implements OnInit {
       model: this.inputModel }
 
       console.log(quote);
-
       this.cleanFields()
   }
 
