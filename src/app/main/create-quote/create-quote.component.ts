@@ -11,7 +11,6 @@ export class CreateQuoteComponent implements OnInit {
   inputContent: string | undefined;
   inputAuthor: string | undefined;
   inputModel: string | undefined;
-  quotes: Quote[] | [] = [];
 
   saveData() {
     const quote: Quote = {
@@ -19,7 +18,7 @@ export class CreateQuoteComponent implements OnInit {
       author: this.inputAuthor,
       model: this.inputModel }
 
-      console.log(quote)
+      console.log(quote);
 
       this.cleanFields()
   }
@@ -34,11 +33,4 @@ export class CreateQuoteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
 }
-
-
-// atributo dados
-// property bind [no html]
-// mudando conteúdo prévia
