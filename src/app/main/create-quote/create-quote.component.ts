@@ -1,3 +1,4 @@
+import { Quote } from './../../models/quotes.models';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateQuoteComponent implements OnInit {
 
-  thought = {
-    id: '1',
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: ''
+  inputContent: string | undefined;
+  inputAuthor: string | undefined;
+  inputModel: string | undefined;
+  quotes: Quote[] | [] = [];
+
+  saveData() {
+    const quote: Quote = {
+      content: this.inputContent,
+      author: this.inputAuthor,
+      model: this.inputModel }
+
+      console.log(quote)
+
+      this.cleanFields()
+  }
+
+  cleanFields() {
+    this.inputContent = '';
+    this.inputAuthor = '';
+    this.inputModel = '';
   }
 
   constructor() { }
