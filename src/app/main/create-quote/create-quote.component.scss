@@ -134,6 +134,7 @@
   &__card {
     background-color: var(--White);
     max-width: 300px;
+    min-width: 240px;
     padding: 12px;
     display: flex;
     flex-direction: column;
