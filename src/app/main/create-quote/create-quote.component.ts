@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateQuoteComponent implements OnInit {
 
+  thought = {
+    id: '1',
+    content: 'Só sei que nada sei',
+    author: 'Sócrates',
+    model: ''
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
 }
+
+
+// atributo dados
+// property bind [no html]
+// mudando conteúdo prévia

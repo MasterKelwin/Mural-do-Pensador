@@ -2,12 +2,23 @@
   <h2 class="form__title">Adicione um novo pensamento ou citação</h2>
   <div class="form__div-thought">
     <label for="thought" class="form__div-thought__label">Pensamento ou citação</label>
-    <input type="textarea" id="thought" name="thought" placeholder="Digite o pensamento ou citação"
-      class="form__div-thought__input">
+    <input
+    type="textarea"
+    id="thought"
+    name="thought"
+    placeholder="Digite o pensamento ou citação"
+    class="form__div-thought__input"
+    [value]="thought.content">
   </div>
   <div class="form__div-author">
     <label for="author" class="form__div-author__label">Autoria</label>
-    <input type="textarea" id="author" name="author" placeholder="Digite a autoria" class="form__div-author__input">
+    <input
+    type="textarea"
+    id="author"
+    name="author"
+    placeholder="Digite a autoria"
+    class="form__div-author__input"
+    [value]="thought.author">
   </div>
 
   <div class="form__div-models">
@@ -27,8 +38,8 @@
 
         <div class="model__card model1">
           <img src="../../../assets/aspas1.png" alt="Aspas rosas" class="model__card-img">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas nam sint laudantium?</p>
-          <p>Nome do autor(a)</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
 
@@ -45,8 +56,8 @@
 
         <div class="model__card model2">
           <img src="../../../assets/aspas2.png" alt="Aspas rosas" class="model__card-img">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas nam sint laudantium?</p>
-          <p>Nome do autor(a)</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
 
@@ -63,8 +74,8 @@
 
         <div class="model__card model3">
           <img src="../../../assets/aspas3.png" alt="Aspas rosas" class="model__card-img">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas nam sint laudantium?</p>
-          <p>Nome do autor(a)</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
     </div>
