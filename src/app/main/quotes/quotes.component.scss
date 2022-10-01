@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: var(--secondary);
+}
+
+button {
+  margin: 1rem;
+  width: 200px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--backgroundDark);
+  color: var(--White);
+  font-weight: bold;
+  transition: .25s ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--backgroundLight);
+    color: var(--secundary);
+  }
+}
