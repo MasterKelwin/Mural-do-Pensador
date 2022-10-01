@@ -4,10 +4,14 @@
   routerLink="/create-quote"
   >Adicionar pensamento</button>
 
-  <div class="quotes">
+  <div class="quotes" *ngIf="thoughts.length > 0, else noThoughts">
     <div *ngFor="let thought of thoughts" class="ronaldo">
       <app-card-quote [thought]="thought"></app-card-quote>
     </div>
   </div>
+
+  <ng-template #noThoughts>
+    <p>Ainda não há pensamentos cadastrados!</p>
+  </ng-template>
 
 </section>
