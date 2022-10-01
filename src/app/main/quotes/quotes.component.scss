@@ -12,7 +12,7 @@ section {
 }
 
 button {
-  margin: 1rem;
+  margin: 1rem 0 2rem 0;
   width: 200px;
   height: 32px;
   border-radius: 6px;
@@ -33,10 +33,10 @@ button {
 .quotes {
   display: flex;
   flex-direction: row;
-  max-width: 80%;
+  max-width: 964px;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
