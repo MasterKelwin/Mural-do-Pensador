@@ -1,4 +1,4 @@
-<div class="wrapper {{ thought.model }}">
+<div class="wrapper {{ thought.model }}" [ngClass]="thoughtWidth()">
   <div class="info">
     <img src="../../../../assets/{{ thought.model }}.png" alt="aspas" class="info__img">
     <p class="info__content"> {{ thought.content }} </p>
