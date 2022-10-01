@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateQuoteComponent } from './main/create-quote/create-quote.component';
 import { FormsModule } from '@angular/forms';
 import { QuotesComponent } from './main/quotes/quotes.component';
+import { CardQuoteComponent } from './main/quotes/card-quote/card-quote.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { QuotesComponent } from './main/quotes/quotes.component';
     HeaderComponent,
     FooterComponent,
     CreateQuoteComponent,
-    QuotesComponent
+    QuotesComponent,
+    CardQuoteComponent
   ],
   imports: [
     BrowserModule,
