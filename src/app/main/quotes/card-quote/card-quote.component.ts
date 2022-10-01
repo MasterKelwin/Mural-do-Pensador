@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-quote',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardQuoteComponent implements OnInit {
 
+  @Input() thought = {
+    content: '',
+    author: '',
+    model: ''
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  thoughtWidth(): string {
+    if(this.thought.content.length >= 220) {
+      return 'thought-g'
+    }  return 'thought-p'
+  }
 }
