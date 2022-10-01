@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardQuoteComponent implements OnInit {
 
+  thought = {
+    content: 'Só sei que nada sei',
+    author: 'Sócrates',
+    model: 'model1'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
