@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-quote',
@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardQuoteComponent implements OnInit {
 
-  thought = {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model1'
+  @Input() thought = {
+    content: '',
+    author: '',
+    model: ''
   }
 
   constructor() { }

@@ -30,5 +30,14 @@ button {
   }
 }
 
+.quotes {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 

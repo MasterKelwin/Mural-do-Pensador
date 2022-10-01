@@ -4,5 +4,10 @@
   routerLink="/create-quote"
   >Adicionar pensamento</button>
 
-  <app-card-quote></app-card-quote>
+  <div class="quotes">
+    <div *ngFor="let thought of thoughts" class="ronaldo">
+      <app-card-quote [thought]="thought"></app-card-quote>
+    </div>
+  </div>
+
 </section>
