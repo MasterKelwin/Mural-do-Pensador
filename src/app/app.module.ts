@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateQuoteComponent } from './main/create-quote/create-quote.component';
 import { FormsModule } from '@angular/forms';
+import { QuotesComponent } from './main/quotes/quotes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CreateQuoteComponent
+    CreateQuoteComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
