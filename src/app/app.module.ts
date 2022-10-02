@@ -11,6 +11,7 @@ import { QuotesComponent } from './main/quotes/quotes.component';
 import { CardQuoteComponent } from './main/quotes/card-quote/card-quote.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteComponent } from './main/delete/delete.component';
+import { EditComponent } from './main/edit/edit.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DeleteComponent } from './main/delete/delete.component';
     CreateQuoteComponent,
     QuotesComponent,
     CardQuoteComponent,
-    DeleteComponent
+    DeleteComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,13 @@ export class QuotesService {
     return this.http.delete<Quote>(url);
   }
 
+  update(thought: Quote): Observable<Quote> {
+    const url = `${this.API}/${thought.id}`
+    return this.http.put<Quote>(url, thought);
+  }
+
   findById(id: number): Observable<Quote> {
+    console.log(id)
     const url = `${this.API}/${id}`;
     return this.http.get<Quote>(url);
   }

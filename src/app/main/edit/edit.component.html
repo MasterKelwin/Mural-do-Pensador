@@ -1,0 +1,111 @@
+<h2 class="form__title">Edite seu pensamento</h2>
+
+<form class="form container" (ngSubmit)="updateThought()">
+  <div class="form__div-thought">
+    <label for="thought" class="form__div-thought__label">Pensamento ou citação</label>
+    <input
+    type="textarea"
+    id="thought"
+    name="thought"
+    placeholder="Digite o pensamento ou citação"
+    class="form__div-thought__input"
+    [(ngModel)]="thought.content">
+  </div>
+  <div class="form__div-author">
+    <label for="author" class="form__div-author__label">Autoria</label>
+    <input
+    type="textarea"
+    id="author"
+    name="author"
+    placeholder="Digite a autoria"
+    class="form__div-author__input"
+    [(ngModel)]="thought.author">
+  </div>
+
+  <div class="form__div-models">
+    <label for="model" class="form__label-model">Selecione o modelo do card:</label>
+
+    <div class="form__div-models__models">
+      <div class="model">
+        <label for="model1" class="model__label" >
+          <input
+          type="radio"
+          id="model1"
+          value="model1"
+          name="model-card"
+          class="model__label-input"
+          [(ngModel)]="thought.model"
+          >
+          <div class="model__label-div">
+              <span class="model__label-div__span"></span>
+          </div>
+          <span class="model__label-span">Modelo 1</span>
+        </label>
+
+        <p class="preview-text">Prévia:</p>
+
+        <div class="model__card model1">
+          <img src="../../../assets/model1.png" alt="Aspas rosas" class="model__card-img">
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
+        </div>
+      </div>
+
+      <div class="model">
+        <label for="model2" class="model__label" >
+          <input
+          type="radio"
+          id="model2"
+          value="model2"
+          name="model-card"
+          class="model__label-input"
+          [(ngModel)]="thought.model"
+          >
+          <div class="model__label-div">
+              <span class="model__label-div__span"></span>
+          </div>
+          <span class="model__label-span">Modelo 2</span>
+        </label>
+
+        <p class="preview-text">Prévia:</p>
+
+        <div class="model__card model2">
+          <img src="../../../assets/model2.png" alt="Aspas rosas" class="model__card-img">
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
+        </div>
+      </div>
+
+      <div class="model">
+        <label for="model3" class="model__label" >
+          <input
+          type="radio"
+          id="model3"
+          value="model3"
+          name="model-card"
+          class="model__label-input"
+          [(ngModel)]="thought.model"
+          >
+          <div class="model__label-div">
+              <span class="model__label-div__span"></span>
+          </div>
+          <span class="model__label-span">Modelo 3</span>
+        </label>
+
+        <p class="preview-text">Prévia:</p>
+
+        <div class="model__card model3">
+          <img src="../../../assets/model3.png" alt="Aspas rosas" class="model__card-img">
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form__buttons">
+    <button (click)="updateThought()">Salvar</button>
+    <button routerLink="/quotes">Cancelar</button>
+  </div>
+
+</form>
