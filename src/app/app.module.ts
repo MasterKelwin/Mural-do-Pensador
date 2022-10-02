@@ -9,6 +9,7 @@ import { CreateQuoteComponent } from './main/create-quote/create-quote.component
 import { FormsModule } from '@angular/forms';
 import { QuotesComponent } from './main/quotes/quotes.component';
 import { CardQuoteComponent } from './main/quotes/card-quote/card-quote.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CardQuoteComponent } from './main/quotes/card-quote/card-quote.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

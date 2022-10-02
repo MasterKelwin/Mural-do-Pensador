@@ -1,3 +1,4 @@
+import { QuotesService } from './../../../services/quotes.service';
 import { Component, OnInit } from '@angular/core';
 import { Quote } from 'src/app/models/quotes.models';
 
@@ -10,9 +11,10 @@ export class QuotesComponent implements OnInit {
 
   thoughts: Quote[] = [];
 
-  constructor() { }
+  constructor(private service: QuotesService) { }
 
   ngOnInit(): void {
+    this.service.list();
   }
 
 }
