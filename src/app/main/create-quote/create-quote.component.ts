@@ -13,7 +13,7 @@ export class CreateQuoteComponent implements OnInit {
   thought: Quote = {
     content: '',
     author: '',
-    model: 'model1'
+    model: ''
   }
 
   saveData() {
