@@ -9,7 +9,7 @@
     name="thought"
     placeholder="Digite o pensamento ou citação"
     class="form__div-thought__input"
-    [(ngModel)]="inputContent">
+    [(ngModel)]="thought.content">
   </div>
   <div class="form__div-author">
     <label for="author" class="form__div-author__label">Autoria</label>
@@ -19,7 +19,7 @@
     name="author"
     placeholder="Digite a autoria"
     class="form__div-author__input"
-    [(ngModel)]="inputAuthor">
+    [(ngModel)]="thought.author">
   </div>
 
   <div class="form__div-models">
@@ -39,8 +39,8 @@
 
         <div class="model__card model1">
           <img src="../../../assets/model1.png" alt="Aspas rosas" class="model__card-img">
-          <p>{{ inputContent }}</p>
-          <p>{{ inputAuthor }}</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
 
@@ -57,8 +57,8 @@
 
         <div class="model__card model2">
           <img src="../../../assets/model2.png" alt="Aspas rosas" class="model__card-img">
-          <p>{{ inputContent }}</p>
-          <p>{{ inputAuthor }}</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
 
@@ -75,15 +75,15 @@
 
         <div class="model__card model3">
           <img src="../../../assets/model3.png" alt="Aspas rosas" class="model__card-img">
-          <p>{{ inputContent }}</p>
-          <p>{{ inputAuthor }}</p>
+          <p>{{ thought.content }}</p>
+          <p>{{ thought.author }}</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="form__buttons">
-    <button type="submit" routerLink="/quotes">Salvar</button>
+    <button type="submit">Salvar</button>
     <button routerLink="/quotes">Cancelar</button>
   </div>
 

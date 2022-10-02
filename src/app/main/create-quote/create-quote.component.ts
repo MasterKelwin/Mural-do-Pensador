@@ -1,5 +1,7 @@
+import { QuotesService } from '../../../services/quotes.service';
 import { Quote } from './../../models/quotes.models';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-quote',
@@ -8,28 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateQuoteComponent implements OnInit {
 
-  inputContent: string | undefined;
-  inputAuthor: string | undefined;
-  inputModel: string | undefined;
+  thought: Quote = {
+    content: '',
+    author: '',
+    model: 'model1'
+  }
 
   saveData() {
-    const quote: Quote = {
-      id: 0,
-      content: this.inputContent,
-      author: this.inputAuthor,
-      model: this.inputModel }
-
-      console.log(quote);
-      this.cleanFields()
+    this.service.create(this.thought).subscribe(() => {
+      this.router.navigate(['/quotes']);
+    });
+    this.cleanFields()
   }
 
   cleanFields() {
-    this.inputContent = '';
-    this.inputAuthor = '';
-    this.inputModel = '';
+    this.thought.content = '';
+    this.thought.author = '';
+    this.thought.model = '';
   }
 
-  constructor() { }
+  constructor(
+    private service: QuotesService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
   }

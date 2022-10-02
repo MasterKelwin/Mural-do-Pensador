@@ -1,5 +1,5 @@
 export interface Quote {
-  id: number | undefined
+  id?: number | undefined
   content: string | undefined
   author: string | undefined
   model: string | undefined

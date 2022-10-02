@@ -11,8 +11,14 @@ export class QuotesService {
 
   constructor(private http: HttpClient) { }
 
-  list(): Observable<Quote[]> {
+  read(): Observable<Quote[]> {
     return this.http.get<Quote[]>(this.API);
   }
+
+  create(thought: Quote): Observable<Quote> {
+    return this.http.post<Quote>(this.API, thought)
+  }
+
+
 
 }

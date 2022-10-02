@@ -14,7 +14,7 @@ export class QuotesComponent implements OnInit {
   constructor(private service: QuotesService) { }
 
   ngOnInit(): void {
-    this.service.list().subscribe((thoughts) => {
+    this.service.read().subscribe((thoughts) => {
       this.thoughts = thoughts
     });
   }
