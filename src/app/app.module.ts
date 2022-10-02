@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { QuotesComponent } from './main/quotes/quotes.component';
 import { CardQuoteComponent } from './main/quotes/card-quote/card-quote.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteComponent } from './main/delete/delete.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     CreateQuoteComponent,
     QuotesComponent,
-    CardQuoteComponent
+    CardQuoteComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -13,14 +13,14 @@ export class CreateQuoteComponent implements OnInit {
   thought: Quote = {
     content: '',
     author: '',
-    model: 'model1'
+    model: ''
   }
 
   saveData() {
     this.service.create(this.thought).subscribe(() => {
       this.router.navigate(['/quotes']);
     });
-    this.cleanFields()
+    this.cleanFields();
   }
 
   cleanFields() {
@@ -37,3 +37,7 @@ export class CreateQuoteComponent implements OnInit {
   ngOnInit(): void {
   }
 }
+
+
+// 1 componente pra excluir
+// criar aparencia modal com 2 botoes, excluir e cancelar
