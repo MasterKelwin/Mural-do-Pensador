@@ -20,12 +20,18 @@
     },
     {
       "id": 4,
+      "content": "Inteligência é a capacidade de se adaptar à mudança.",
+      "author": "Stephen Hawking",
+      "model": "model2"
+    },
+    {
+      "id": 5,
       "content": "Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer.",
       "author": "Alan Turing",
       "model": "model1"
     },
     {
-      "id": 5,
+      "id": 6,
       "content": "Eu quero um bom retorno financeiro, mas para mim há outras coisas mais importantes, como a recompensa de ver a minha criatividade e a minha visão tecnológica darem frutos e mudarem o mundo de maneira positiva.",
       "author": "Jeff Bezos",
       "model": "model3"

@@ -21,7 +21,7 @@ export class CardQuoteComponent implements OnInit {
   }
 
   thoughtWidth(): string {
-    if(this.thought.content!.length >= 220) {
+    if(this.thought.content!.length >= 200) {
       return 'thought-g'
     }  return 'thought-p'
   }
