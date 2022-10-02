@@ -1,5 +1,5 @@
 .wrapper {
-  background: var(--white);
+  background: var(--White);
   box-shadow: 7px 8px 0px 0px var(--backgroundDark);
   min-width: 360px;
   min-height: 150px;
@@ -31,19 +31,16 @@
   align-items: center;
   align-content: center;
   margin-top: 30px;
+  gap: 1rem;
 
   &__delete {
     border: none;
     cursor: pointer;
-    margin-right: 10px;
-    margin-top: 10px;
   }
 
   &__edit {
     border: none;
     cursor: pointer;
-    margin-left: 5px;
-    margin-top: 10px;
   }
 }
 
@@ -52,14 +49,15 @@
   height: 32px;
   border-radius: 6px;
   border: none;
-  background-color: var(--White);
-  color: var(--secondary);
+  background-color: var(--backgroundDark);
+  color: var(--White);
   font-weight: bold;
   transition: .25s ease-in-out;
 
   &:hover {
     cursor: pointer;
-    background-color: #dadada;
+    background-color: var(--backgroundLight);
+    color: var(--backgroundDark);
   }
 }
 

@@ -30,7 +30,7 @@ export class DeleteComponent implements OnInit {
     })
   }
 
-  delete() {
+  deleteT() {
     if(this.thought.id){
       this.service.delete(this.thought.id).subscribe(() => {
         this.router.navigate(['/quotes']);
