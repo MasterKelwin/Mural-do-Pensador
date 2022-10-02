@@ -30,7 +30,6 @@ export class QuotesService {
   }
 
   findById(id: number): Observable<Quote> {
-    console.log(id)
     const url = `${this.API}/${id}`;
     return this.http.get<Quote>(url);
   }
