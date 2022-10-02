@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from 'src/app/models/quotes.models';
 
 @Component({
   selector: 'app-quotes',
@@ -7,47 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
 
-  thoughts = [{
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model2'
-  },
-  {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model1'
-  },
-  {
-    content: 'Só sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada sei',
-    author: 'Sócrates',
-    model: 'model3'
-  },
-  {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model2'
-  },
-  {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model2'
-  },
-  {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model1'
-  },
-  {
-    content: 'Só sei que nada sei',
-    author: 'Sócrates',
-    model: 'model2'
-  },
-  {
-    content: 'Só sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada seiSó sei que nada sei',
-    author: 'Sócrates',
-    model: 'model3'
-  },
- ]
+  thoughts: Quote[] = [];
 
   constructor() { }
 

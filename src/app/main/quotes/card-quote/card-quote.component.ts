@@ -1,3 +1,4 @@
+import { Quote } from './../../../models/quotes.models';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardQuoteComponent implements OnInit {
 
-  @Input() thought = {
+  @Input() thought: Quote = {
+    id: 0,
     content: '',
     author: '',
     model: ''
@@ -19,7 +21,7 @@ export class CardQuoteComponent implements OnInit {
   }
 
   thoughtWidth(): string {
-    if(this.thought.content.length >= 220) {
+    if(this.thought.content!.length >= 220) {
       return 'thought-g'
     }  return 'thought-p'
   }

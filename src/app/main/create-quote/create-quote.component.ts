@@ -14,6 +14,7 @@ export class CreateQuoteComponent implements OnInit {
 
   saveData() {
     const quote: Quote = {
+      id: 0,
       content: this.inputContent,
       author: this.inputAuthor,
       model: this.inputModel }
