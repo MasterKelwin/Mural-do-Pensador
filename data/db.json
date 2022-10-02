@@ -1,0 +1,46 @@
+{
+  "thoughts": [
+    {
+      "id": 1,
+      "content": "Só sei que nada sei.",
+      "author": "Sócrates",
+      "model": "model1"
+    },
+    {
+      "id": 2,
+      "content": "Criatividade é só conectar coisas. Quando você pergunta a pessoas criativas como elas fizeram algo, elas geralmente se sentem um pouco culpadas porque elas não fizeram aquilo realmente, elas apenas viram alguma coisa.",
+      "author": "Steve Jobs",
+      "model": "model2"
+    },
+    {
+      "id": 3,
+      "content": "É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.",
+      "author": "Bill Gates",
+      "model": "model3"
+    },
+    {
+      "id": 4,
+      "content": "Inteligência é a capacidade de se adaptar à mudança.",
+      "author": "Stephen Hawking",
+      "model": "model2"
+    },
+    {
+      "id": 5,
+      "content": "Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer.",
+      "author": "Alan Turing",
+      "model": "model1"
+    },
+    {
+      "id": 6,
+      "content": "Eu quero um bom retorno financeiro, mas para mim há outras coisas mais importantes, como a recompensa de ver a minha criatividade e a minha visão tecnológica darem frutos e mudarem o mundo de maneira positiva.",
+      "author": "Jeff Bezos",
+      "model": "model3"
+    },
+    {
+      "content": "Quero ser o homem aranha",
+      "author": "Nicollas Hollunder",
+      "model": "model1",
+      "id": 7
+    }
+  ]
+}
