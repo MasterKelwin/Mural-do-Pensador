@@ -16,9 +16,16 @@ export class QuotesService {
   }
 
   create(thought: Quote): Observable<Quote> {
-    return this.http.post<Quote>(this.API, thought)
+    return this.http.post<Quote>(this.API, thought);
   }
 
+  delete(id: number): Observable<Quote> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Quote>(url);
+  }
 
-
+  findById(id: number): Observable<Quote> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Quote>(url);
+  }
 }
